@@ -10,13 +10,10 @@ class Particle {
   }
 
   display() {
-
     var pos = this.body.position;
-    var angle = this.body.angle;
 
     push();
     translate(pos.x, pos.y);
-    rotate(angle);
     noStroke();
     fill(this.colour);
     ellipseMode(RADIUS);
